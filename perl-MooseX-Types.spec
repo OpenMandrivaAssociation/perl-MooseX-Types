@@ -17,7 +17,7 @@ BuildRequires: perl(FindBin)
 BuildRequires: perl(Moose) > 0.60
 BuildRequires: perl(Sub::Install)
 BuildRequires: perl(Sub::Uplevel)
-BuildRequires: perl(Test::More) >= 0.80
+BuildRequires: perl-Test-Simple
 BuildRequires: perl-namespace-clean
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
