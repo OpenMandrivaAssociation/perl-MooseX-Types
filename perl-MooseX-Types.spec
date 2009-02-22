@@ -1,6 +1,6 @@
 %define module   MooseX-Types
 %define version    0.08
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -20,6 +20,7 @@ BuildRequires: perl(Sub::Uplevel)
 BuildRequires: perl(Test::More) >= 0.80
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl-namespace-clean
+Requires: perl-namespace-clean
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
