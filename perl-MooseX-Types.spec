@@ -19,6 +19,7 @@ BuildRequires: perl(Sub::Install)
 BuildRequires: perl(Sub::Uplevel)
 BuildRequires: perl(Test::More) >= 0.80
 BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Data::Dump)
 BuildRequires: perl-namespace-clean
 Requires: perl-namespace-clean
 BuildArch: noarch
