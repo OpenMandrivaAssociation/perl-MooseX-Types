@@ -1,5 +1,5 @@
 %define module   MooseX-Types
-%define version    0.10
+%define version    0.11
 %define release    %mkrel 1
 
 Name:       perl-%{module}
@@ -17,7 +17,7 @@ BuildRequires: perl(FindBin)
 BuildRequires: perl(Moose) > 0.60
 BuildRequires: perl(Sub::Install)
 BuildRequires: perl(Sub::Uplevel)
-BuildRequires: perl(Test::More) >= 0.80
+BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Data::Dump)
 BuildRequires: perl-namespace-clean
@@ -42,7 +42,7 @@ easier to use Moose types in your code.
 %setup -q -n %{module}-%{version} 
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make
 
 %check
