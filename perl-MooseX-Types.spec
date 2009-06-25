@@ -1,5 +1,5 @@
 %define module   MooseX-Types
-%define version    0.12
+%define version    0.13
 %define release    %mkrel 1
 
 Name:       perl-%{module}
