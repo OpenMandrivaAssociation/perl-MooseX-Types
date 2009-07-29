@@ -1,15 +1,16 @@
-%define module   MooseX-Types
-%define version    0.16
-%define release    %mkrel 1
+%define upstream_name    MooseX-Types
+%define upstream_version 0.16
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Organise your Moose types in libraries
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/MooseX/%{module}-%{version}.tar.gz
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Carp)
 BuildRequires: perl(Carp::Clan)
 BuildRequires: perl(Class::MOP)
@@ -21,9 +22,9 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Data::Dump)
 BuildRequires: perl-namespace-clean
-Requires: perl-namespace-clean
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+Requires: perl-namespace-clean
 
 %description
 The types provided with the Moose manpage are by design global. This
@@ -39,7 +40,7 @@ This module will also provide you with some helper functions to make it
 easier to use Moose types in your code.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
@@ -60,4 +61,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/MooseX
-
