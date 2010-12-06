@@ -20,6 +20,8 @@ BuildRequires: perl(Sub::Install)
 BuildRequires: perl(Sub::Uplevel)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Test::Fatal)
+BuildRequires: perl(Test::Requires)
 BuildRequires: perl(Data::Dump)
 BuildRequires: perl-namespace-clean
 BuildArch: noarch
