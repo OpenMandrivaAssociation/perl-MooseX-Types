@@ -11,6 +11,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
+BuildRequires: perl(namespace::autoclean)
 BuildRequires: perl(Carp::Clan)
 BuildRequires: perl(Class::MOP)
 BuildRequires: perl(FindBin)
