@@ -1,5 +1,4 @@
-%define upstream_name    MooseX-Types
-%define upstream_version 0.35
+%define upstream_name    MooseX-Types%define upstream_version 0.41
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -156,3 +155,4 @@ make test
 
 * Wed Jul 16 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.04-1mdv2009.0
 - initial mdv release, generated with cpan2dist
+

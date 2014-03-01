@@ -1,2 +1,4 @@
+removed_sources:
+  MooseX-Types-0.35.tar.gz: 3733a19f990fa390c84bcf590e17aac36b668198
 sources:
-  "MooseX-Types-0.35.tar.gz": 3733a19f990fa390c84bcf590e17aac36b668198
+  MooseX-Types-0.41.tar.gz: b0a971d6b70bdaa1afd28e6732699e325c197a7f
