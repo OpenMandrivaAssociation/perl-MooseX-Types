@@ -1,16 +1,14 @@
 %define upstream_name    MooseX-Types
-%define upstream_version 0.51
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.51
+Release:    2
 
 Summary:    Organise your Moose types in libraries
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/moose/MooseX-Types
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
@@ -45,7 +43,7 @@ This module will also provide you with some helper functions to make it
 easier to use Moose types in your code.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
