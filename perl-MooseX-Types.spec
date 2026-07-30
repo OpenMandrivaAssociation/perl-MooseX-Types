@@ -1,14 +1,15 @@
 %define upstream_name    MooseX-Types
+%define upstream_version 0.51
 Name:       perl-%{upstream_name}
-Version:    0.51
-Release:    2
+Version:	0.51
+Release:	1
 
 Summary:    Organise your Moose types in libraries
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/moose/MooseX-Types
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-0.51.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
