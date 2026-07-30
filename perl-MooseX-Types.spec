@@ -2,7 +2,7 @@
 %define upstream_version 0.51
 Name:       perl-%{upstream_name}
 Version:	0.51
-Release:	3
+Release:	4
 
 Summary:    Organise your Moose types in libraries
 
@@ -47,7 +47,7 @@ easier to use Moose types in your code.
 %setup -q -n MooseX-Types-0.51
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
+perl Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make
 
 %check
