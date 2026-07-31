@@ -2,7 +2,7 @@
 %define upstream_version 0.51
 Name:       perl-%{upstream_name}
 Version:	0.51
-Release:	10
+Release:	11
 
 Summary:    Organise your Moose types in libraries
 
