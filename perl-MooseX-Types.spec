@@ -2,7 +2,7 @@
 %define upstream_version 0.51
 Name:       perl-%{upstream_name}
 Version:	0.51
-Release:	1
+Release:	2
 
 Summary:    Organise your Moose types in libraries
 
@@ -12,6 +12,7 @@ Url:        https://github.com/moose/MooseX-Types
 Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-0.51.tar.gz
 
 BuildRequires:	make
+BuildRequires:	perl(Module::Build::Tiny)
 BuildRequires:	perl(Module::Build)
 BuildRequires: perl(Carp)
 BuildRequires: perl(namespace::autoclean)
@@ -52,9 +53,7 @@ perl Build.PL --installdirs=vendor
 ./Build
 
 %check
-# soft: do not fail package on test failures
-set +e
-./Build test || : || :
+./Build test || :
 
 %install
 ./Build install --destdir=%{buildroot} --create_packlist=0
